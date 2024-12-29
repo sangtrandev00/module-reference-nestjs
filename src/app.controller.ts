@@ -9,4 +9,9 @@ export class AppController {
   useDyanmicService(): string {
     return this.appService.useDynamicService();
   }
+
+  @Get('do-something')
+  doSomething(): string {
+    return this.appService.doSomething();
+  }
 }
